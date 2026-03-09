@@ -4,11 +4,11 @@ const PORT = 3000;
 
 app.use(express.json());
 
-app.get('whoami', (req, res) => {
+app.get('/whoami', (req, res) => {
     res.status(200).send('2676309');
 });
 
-app.get('books', (req, res)=>{
+app.get('/books', (req, res)=>{
     res.status(200).json(books);
 });
 
